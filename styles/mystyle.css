@@ -1,0 +1,68 @@
+/* GLOBAL */
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+
+/* UTILITY */
+.hidden{
+    display: none;
+}
+
+/* HEADER */
+header h1 {
+  text-align: center;
+}
+
+ /* MAIN */
+.main-container{
+    display: flex;
+    height: calc(100% - 56px);
+}
+
+/* TASK LIST */
+.sec-list{
+    padding: 1rem;
+    flex: 6;
+    background-color: #da84fc;
+    position: relative;
+}
+
+/* FORM */
+.sec-form{
+    padding: 1rem;
+    flex: 3;
+    background-color: #fdcb6d;
+    position: relative;
+    display: flex;
+}
+.sec-form .form{
+    flex: 9;
+}
+.group{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+.group label{
+    flex:2;
+}
+.group input, .group textarea, .group select{
+    flex: 8;
+}
+.sec-form .icon{
+    flex: 1;
+}
+#btnHide{
+    cursor: pointer;
+}
+#taskImportant{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* FOOTER*/
+footer p{
+    text-align: center;
+}

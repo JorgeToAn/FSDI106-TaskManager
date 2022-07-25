@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/mystyle.css" />
+    <title>FSDI106 - Task Manager</title>
+  </head>
+  <body>
+    <header>
+        <h1>FSDI106 - Task Manager</h1>
+    </header>
+
+    <main class="main-container">
+        <section class="sec-form">
+            <div class="form">
+                <h3>Form</h3>
+                <div class="group">
+                    <label for="taskTitle">Name</label>
+                    <input type="text" class="form-control" id="taskTitle">
+                </div>
+                <div class="group">
+                    <label for="taskDesc">Description</label>
+                    <textarea class="form-control" id="taskDesc" rows="3"></textarea>
+                </div>
+                <div class="group">
+                    <label for="taskDueDate">Due date</label>
+                    <input type="datetime-local" class="form-control" id="taskDueDate">
+                </div>
+                <div class="group">
+                    <label for="taskColor">Color</label>
+                    <input type="color" class="form-control form-control-color" id="taskColor">
+                </div>
+                <div class="group">
+                    <label for="taskEmoji">Emoji</label>
+                    <select id="taskEmoji" class="form-select">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label for="taskLocation">Location</label>
+                    <input type="text" id="taskLocation" class="form-control">
+                </div>
+                <div class="group">
+                    <label>Important</label>
+                    <i id="taskImportant" class="fa-regular fa-star"></i>
+                </div>
+                <div class="group">
+                    <label for="taskStatus">Status</label>
+                    <select id="taskStatus" class="form-select">
+                        <option value="">New</option>
+                        <option value="">In progress</option>
+                        <option value="">Pause</option>
+                        <option value="">Done</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label for="taskNotif">Notification</label>
+                    <input type="checkbox" id="taskNotif">
+                </div>
+                <button class="btn btn-success">Add task</button>
+            </div>
+            <div class="icon">
+                <i id="btnHide" class="fa-solid fa-angles-left"></i>
+            </div>
+        </section>
+        <section class="sec-list">
+            <h3>List</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio culpa commodi error laborum molestias deleniti obcaecati ducimus illum beatae fuga impedit ipsum magnam sed voluptatibus aperiam dolorum, repellat quidem expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint itaque nihil vitae at, ut mollitia natus repellat suscipit accusamus facilis recusandae laudantium dolore error accusantium consequuntur repellendus minus quaerat voluptates?</p>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
