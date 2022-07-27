@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 /* GLOBAL */
 *{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     height: 100vh;
@@ -9,6 +12,9 @@ body{
 /* UTILITY */
 .hidden{
     display: none;
+}
+hr.x-solid{
+    border-bottom: 1px solid #f1f1f1;
 }
 
 /* HEADER */
@@ -26,38 +32,76 @@ header h1 {
 .sec-list{
     padding: 1rem;
     flex: 6;
-    background-color: #da84fc;
+    background-color: #84d0fc;
     position: relative;
+}
+
+/* TASK */
+.task-block{
+    margin: 1rem 0 1rem 0;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 10px;
+}
+.task-block:hover{
+    background-color: #eeeeee;
+}
+
+.task-title{
+    width: 70%;
+}
+.task-title h4{
+    font-weight: 700;
+}
+.task-info{
+    color: #0077ff;
+}
+.task-status{
+    width: 8%;
+}
+.task-remove{
+    color: red;
+}
+.task-remove i{
+    cursor: pointer;
 }
 
 /* FORM */
 .sec-form{
-    padding: 1rem;
     flex: 3;
     background-color: #fdcb6d;
     position: relative;
     display: flex;
 }
 .sec-form .form{
-    flex: 9;
+    padding: 1rem;
+    flex: 1;
 }
 .group{
     display: flex;
+    width: 100%;
     margin-bottom: 0.5rem;
 }
 .group label{
+    font-weight: 400;
     flex:2;
 }
 .group input, .group textarea, .group select{
     flex: 8;
 }
 .sec-form .icon{
-    flex: 1;
+    padding: 1rem 0.5rem 0 0.5rem;
+    flex: 0.001;
+}
+#btnAddTask{
+    width: 100%;
 }
 #btnHide{
     cursor: pointer;
 }
-#taskImportant{
+#icoImportant{
     font-size: 24px;
     cursor: pointer;
 }
