@@ -19,20 +19,24 @@ hr.x-solid{
 
 /* HEADER */
 header h1 {
-  text-align: center;
+    text-align: center;
+    margin: 0;
 }
 
  /* MAIN */
 .main-container{
     display: flex;
-    height: calc(100% - 56px);
+    height: calc(100% - 3rem);
+    background-image: url(../images/landscape-horizon-mountain-cloud-sunrise-sunset-916051-pxhere.com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* TASK LIST */
 .sec-list{
     padding: 1rem;
     flex: 6;
-    background-color: #84d0fc;
+    /* background-color: #84d0fc; */
     position: relative;
 }
 
@@ -49,29 +53,32 @@ header h1 {
     background-color: #eeeeee;
 }
 
-.task-title{
+.task-block .task-importance i{
+    font-size: 20px;
+}
+.task-block .task-title{
     width: 70%;
 }
-.task-title h4{
+.task-block .task-title h4{
     font-weight: 700;
 }
-.task-info{
+.task-block .task-info{
     color: #0077ff;
 }
-.task-status{
+.task-block .task-status{
     width: 8%;
 }
-.task-remove{
+.task-block .task-remove{
     color: red;
 }
-.task-remove i{
+.task-block .task-remove i{
     cursor: pointer;
 }
 
 /* FORM */
 .sec-form{
     flex: 3;
-    background-color: #fdcb6d;
+    background-color: #fdcb6da8;
     position: relative;
     display: flex;
 }
