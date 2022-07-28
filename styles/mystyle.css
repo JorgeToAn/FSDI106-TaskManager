@@ -35,9 +35,8 @@ header h1 {
 /* TASK LIST */
 .sec-list{
     padding: 1rem;
-    flex: 6;
-    /* background-color: #84d0fc; */
-    position: relative;
+    flex: 7;
+    overflow-y: scroll;
 }
 
 /* TASK */
@@ -79,7 +78,6 @@ header h1 {
 .sec-form{
     flex: 3;
     background-color: #fdcb6da8;
-    position: relative;
     display: flex;
 }
 .sec-form .form{
