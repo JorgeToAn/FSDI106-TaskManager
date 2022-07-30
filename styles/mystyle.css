@@ -44,7 +44,6 @@ header h1 {
     margin: 1rem 0 1rem 0;
     padding-top: 1rem;
     display: flex;
-    justify-content: space-around;
     background-color: white;
     border-radius: 10px;
 }
@@ -52,26 +51,46 @@ header h1 {
     background-color: #eeeeee;
 }
 
+.task-block .task-importance{
+    flex: 0.1;
+}
 .task-block .task-importance i{
     font-size: 20px;
 }
-.task-block .task-title{
+.content{
+    padding: 0 0.5rem 0 0.5rem;
+    flex: 10;
+    display: flex;
+    justify-content: space-around;
+}
+.content .task-title{
     width: 70%;
 }
-.task-block .task-title h4{
+.content .task-title h4{
     font-weight: 700;
 }
-.task-block .task-info{
+.content .task-info{
     color: #0077ff;
 }
-.task-block .task-status{
+.content .task-status{
     width: 8%;
 }
-.task-block .task-remove{
-    color: red;
-}
-.task-block .task-remove i{
-    cursor: pointer;
+
+@media(max-width: 1080px){
+    .content{
+        flex-direction: column;
+    }
+    .content .task-title{
+        width: 100%;
+    }
+    .content .task-info, .content .task-status{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    /* .content .task-info p, .content .task-status p{
+        margin-right: 1rem;
+    } */
 }
 
 /* FORM */
@@ -109,6 +128,12 @@ header h1 {
 #icoImportant{
     font-size: 24px;
     cursor: pointer;
+}
+
+@media(max-width: 1080px){
+    .sec-form{
+        display: none;
+    }
 }
 
 /* FOOTER*/

@@ -82,32 +82,30 @@ function createSyntax(task) {
     </div>`;
   }
   syntax += 
-  `<div class="task-title">
-    <h4>${task.title}</h4>
-    <hr class="x-solid">
-    <p>${task.description}</p>
-  </div>
-  <div class="task-info">
-    <p><i class="fa-solid fa-clock"></i> ${task.date}</p>
-    <p><i class="fa-solid fa-location-dot"></i> ${task.location}</p>
-  </div>`;
+  `<div class="content">
+    <div class="task-title">
+      <h4>${task.title}</h4>
+      <hr class="x-solid">
+      <p>${task.description}</p>
+    </div>
+    <div class="task-info">
+      <p><i class="fa-solid fa-clock"></i> ${task.date}</p>
+      <p><i class="fa-solid fa-location-dot"></i> ${task.location}</p>
+    </div>`;
   if(task.notification){
     syntax += 
     `<div class="task-status">
       <p>${task.status}</p>
-      <p>Will notify</p>
+      <i class="fa-solid fa-bell"></i>
     </div>`;
   } else {
     syntax += 
     `<div class="task-status">
       <p>${task.status}</p>
+      <i class="fa-solid fa-bell-slash"></i>
     </div>`;
   }
-  syntax += 
-  `<div class="task-remove">
-    <i class="fa-solid fa-xmark"></i>
-  </div>
-  </div>`;
+  syntax += `</div></div>`;
 
   return syntax;
 }
