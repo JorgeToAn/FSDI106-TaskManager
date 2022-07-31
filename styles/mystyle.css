@@ -81,21 +81,6 @@ header h1 {
     width: 8%;
 }
 
-#btnAddMobile{
-    display: none;
-    position: fixed;
-    bottom: 1rem;
-    left: 45%;
-    border-radius: 50%;
-    border-color: #198754;
-    color: white;
-    background-color: #198754;
-}
-#btnAddMobile:hover{
-    border-color: #197347;
-    background-color: #197347;
-}
-
 @media(max-width: 1080px){
     .content{
         flex-direction: column;
@@ -108,9 +93,6 @@ header h1 {
         display: flex;
         justify-content: space-between;
         width: 100%;
-    }
-    #btnAddMobile{
-        display: inline;
     }
 }
 
@@ -153,9 +135,6 @@ header h1 {
 
 @media(max-width: 1080px){
     .sec-form{
-        display: none;
-    }
-    #btnHide{
         display: none;
     }
 }
