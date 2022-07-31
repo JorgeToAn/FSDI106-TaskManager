@@ -113,10 +113,6 @@ function createSyntax(task) {
 function displayTask(task) {
   let syntax = createSyntax(task);
 
-  $(document).on("click", "i.fa-xmark", function(){
-    $(this).parent().parent().remove();
-  });
-
   $("#pendingTasks").append(syntax);
 }
 
